@@ -74,6 +74,7 @@ img {
 
 .navbar a:hover {
   color: #555;
+  text-decoration: underline;
 }
 
 .section-a {
@@ -150,17 +151,17 @@ img {
 }
 
 
-
 .section-footer {
+  display: none;
   background: var(--primary-color);
   color: #fff;
   padding: 4rem 0;
 }
 
 .section-footer .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-gap: 1rem; */
 }
 
 .section-footer h3 {
@@ -194,6 +195,56 @@ img {
   top: 0;
   left: 0;
   background-color: var(--overlay-color);
+}
+
+
+/* modal */
+.section-footer {
+  display: none;
+  text-align: center;
+  padding: 0px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.container-box {
+  margin: 10% auto;
+  max-width: 800px;
+  background: #fff;
+  color: #333;
+  position: relative;
+  animation: modalopen 0.5s;
+  border-radius: 10px;
+}
+
+.container-body {
+}
+
+.section-footer .closeModal {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@keyframes modalopen {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.modalInstructions-body{
+  padding: 50px;
 }
 
 @media (max-width: 700px) {
@@ -250,4 +301,3 @@ img {
     display: none;
   }
 }
-
