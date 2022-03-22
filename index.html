@@ -17,9 +17,9 @@
                 <!-- Write your comments here -->
                 <h1 class="logo"></h1>
                 <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="Home"><a href="#home">Home</a></li>
+                    <li class="About"><a href="#about">About</a></li>
+                    <li class="Contact"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -74,17 +74,28 @@
 
         <!-- Footer -->
         <footer class="section-footer" id="contact">
-            <div class="container">
-                <div>
-                    <h3>Contact</h3>
-                    <p>Give us a call</p> 
-                    <p>661-549-0508</p>
-                    <p>Free quotes</p>
-                    <p>* fully bonded</p>
+            <div class="container-box">
+                <div class="container-body">
+                    <div>
+                        <h1>Give us a call</h1> 
+                        <p>661-549-0508</p><br>
+                        <!-- <p>Free quotes</p>
+                        <p>* fully bonded</p> -->
+
+                        <h1>Send us a massage</h1>
+                        <input type="text" placeholder="first name">
+                        <input type="text" placeholder="last name">
+                        <input type="text" placeholder="phone number">
+                        <input type="email" placeholder="email">
+                        <textarea placeholder="message..." rows="5"></textarea>
+                        <button type="submit" href="/">Submit</button>
+                    </div>
+                    <img class="closeModal" src="img/close.svg" alt="close"></img>
                 </div>
             </div>
         </footer>
 
+        <script src="js/contact-modal.js"></script>
         <script src="js/simple-lightbox.min.js"></script>
         <script> new SimpleLightbox('.gallery a', { });</script>
     </body>
